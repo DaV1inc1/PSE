@@ -26,9 +26,9 @@
         {
             "label": "PSE: Start CarMaker",
             "type": "shell",
-            "command": "export ROS_DOMAIN_ID=${input:group} && source /opt/ros/humble/setup.bash && source ros2_ws/install/setup.bash && module load carmaker/14 && /tools/carmaker/CM14/bin/CM_Office-14.0.1 -apphost localhost -ext GUI/CMExt-CMRosIF.mod",
+            "command": "export ROS_DOMAIN_ID=3${input:group} && source /opt/ros/humble/setup.bash && source ros2_ws/install/setup.bash && module load carmaker/14 && /tools/carmaker/CM14/bin/CM_Office-14.0.1 -apphost localhost -ext GUI/CMExt-CMRosIF.mod",
             "detail": "Start CarMaker with ROS2 interface",
-            "options": {
+            "options": { 
                 "cwd": "${workspaceFolder}"
             },
             "problemMatcher": []
