@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cm_msgs/msg/VehicleState.msg
+// generated code does not contain a copyright notice
+
+
+module cm_msgs {
+  module msg {
+    struct VehicleState {
+      double velocity;
+    };
+  };
+};

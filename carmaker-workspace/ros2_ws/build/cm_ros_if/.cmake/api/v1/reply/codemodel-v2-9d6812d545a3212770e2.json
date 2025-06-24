@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7cf8803efdbcf7f072d8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cm_ros_if",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cm_ros_if::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cm_ros_if-f19ed67f81a33224f9ab.json",
+					"name" : "cm_ros_if",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cm_ros_if_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cm_ros_if_uninstall-ab8e814754d794a8abe0.json",
+					"name" : "cm_ros_if_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-98724fd18dc23c223144.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ujglv/Dokumente/PSE/Grundstein/carmaker-workspace/ros2_ws/build/cm_ros_if",
+		"source" : "/home/ujglv/Dokumente/PSE/Grundstein/carmaker-workspace/ros2_ws/src/cm_ros_if"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

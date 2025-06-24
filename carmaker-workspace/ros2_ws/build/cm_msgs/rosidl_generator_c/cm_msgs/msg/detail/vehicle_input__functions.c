@@ -1,0 +1,244 @@
+// generated from rosidl_generator_c/resource/idl__functions.c.em
+// with input from cm_msgs:msg/VehicleInput.idl
+// generated code does not contain a copyright notice
+#include "cm_msgs/msg/detail/vehicle_input__functions.h"
+
+#include <assert.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "rcutils/allocator.h"
+
+
+bool
+cm_msgs__msg__VehicleInput__init(cm_msgs__msg__VehicleInput * msg)
+{
+  if (!msg) {
+    return false;
+  }
+  // gas
+  // brake
+  return true;
+}
+
+void
+cm_msgs__msg__VehicleInput__fini(cm_msgs__msg__VehicleInput * msg)
+{
+  if (!msg) {
+    return;
+  }
+  // gas
+  // brake
+}
+
+bool
+cm_msgs__msg__VehicleInput__are_equal(const cm_msgs__msg__VehicleInput * lhs, const cm_msgs__msg__VehicleInput * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // gas
+  if (lhs->gas != rhs->gas) {
+    return false;
+  }
+  // brake
+  if (lhs->brake != rhs->brake) {
+    return false;
+  }
+  return true;
+}
+
+bool
+cm_msgs__msg__VehicleInput__copy(
+  const cm_msgs__msg__VehicleInput * input,
+  cm_msgs__msg__VehicleInput * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // gas
+  output->gas = input->gas;
+  // brake
+  output->brake = input->brake;
+  return true;
+}
+
+cm_msgs__msg__VehicleInput *
+cm_msgs__msg__VehicleInput__create()
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  cm_msgs__msg__VehicleInput * msg = (cm_msgs__msg__VehicleInput *)allocator.allocate(sizeof(cm_msgs__msg__VehicleInput), allocator.state);
+  if (!msg) {
+    return NULL;
+  }
+  memset(msg, 0, sizeof(cm_msgs__msg__VehicleInput));
+  bool success = cm_msgs__msg__VehicleInput__init(msg);
+  if (!success) {
+    allocator.deallocate(msg, allocator.state);
+    return NULL;
+  }
+  return msg;
+}
+
+void
+cm_msgs__msg__VehicleInput__destroy(cm_msgs__msg__VehicleInput * msg)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (msg) {
+    cm_msgs__msg__VehicleInput__fini(msg);
+  }
+  allocator.deallocate(msg, allocator.state);
+}
+
+
+bool
+cm_msgs__msg__VehicleInput__Sequence__init(cm_msgs__msg__VehicleInput__Sequence * array, size_t size)
+{
+  if (!array) {
+    return false;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  cm_msgs__msg__VehicleInput * data = NULL;
+
+  if (size) {
+    data = (cm_msgs__msg__VehicleInput *)allocator.zero_allocate(size, sizeof(cm_msgs__msg__VehicleInput), allocator.state);
+    if (!data) {
+      return false;
+    }
+    // initialize all array elements
+    size_t i;
+    for (i = 0; i < size; ++i) {
+      bool success = cm_msgs__msg__VehicleInput__init(&data[i]);
+      if (!success) {
+        break;
+      }
+    }
+    if (i < size) {
+      // if initialization failed finalize the already initialized array elements
+      for (; i > 0; --i) {
+        cm_msgs__msg__VehicleInput__fini(&data[i - 1]);
+      }
+      allocator.deallocate(data, allocator.state);
+      return false;
+    }
+  }
+  array->data = data;
+  array->size = size;
+  array->capacity = size;
+  return true;
+}
+
+void
+cm_msgs__msg__VehicleInput__Sequence__fini(cm_msgs__msg__VehicleInput__Sequence * array)
+{
+  if (!array) {
+    return;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+
+  if (array->data) {
+    // ensure that data and capacity values are consistent
+    assert(array->capacity > 0);
+    // finalize all array elements
+    for (size_t i = 0; i < array->capacity; ++i) {
+      cm_msgs__msg__VehicleInput__fini(&array->data[i]);
+    }
+    allocator.deallocate(array->data, allocator.state);
+    array->data = NULL;
+    array->size = 0;
+    array->capacity = 0;
+  } else {
+    // ensure that data, size, and capacity values are consistent
+    assert(0 == array->size);
+    assert(0 == array->capacity);
+  }
+}
+
+cm_msgs__msg__VehicleInput__Sequence *
+cm_msgs__msg__VehicleInput__Sequence__create(size_t size)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  cm_msgs__msg__VehicleInput__Sequence * array = (cm_msgs__msg__VehicleInput__Sequence *)allocator.allocate(sizeof(cm_msgs__msg__VehicleInput__Sequence), allocator.state);
+  if (!array) {
+    return NULL;
+  }
+  bool success = cm_msgs__msg__VehicleInput__Sequence__init(array, size);
+  if (!success) {
+    allocator.deallocate(array, allocator.state);
+    return NULL;
+  }
+  return array;
+}
+
+void
+cm_msgs__msg__VehicleInput__Sequence__destroy(cm_msgs__msg__VehicleInput__Sequence * array)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (array) {
+    cm_msgs__msg__VehicleInput__Sequence__fini(array);
+  }
+  allocator.deallocate(array, allocator.state);
+}
+
+bool
+cm_msgs__msg__VehicleInput__Sequence__are_equal(const cm_msgs__msg__VehicleInput__Sequence * lhs, const cm_msgs__msg__VehicleInput__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!cm_msgs__msg__VehicleInput__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+cm_msgs__msg__VehicleInput__Sequence__copy(
+  const cm_msgs__msg__VehicleInput__Sequence * input,
+  cm_msgs__msg__VehicleInput__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(cm_msgs__msg__VehicleInput);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
+    cm_msgs__msg__VehicleInput * data =
+      (cm_msgs__msg__VehicleInput *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
+    if (!data) {
+      return false;
+    }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!cm_msgs__msg__VehicleInput__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
+        for (; i-- > output->capacity; ) {
+          cm_msgs__msg__VehicleInput__fini(&output->data[i]);
+        }
+        return false;
+      }
+    }
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!cm_msgs__msg__VehicleInput__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}

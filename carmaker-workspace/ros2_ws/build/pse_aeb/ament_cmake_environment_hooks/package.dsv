@@ -1,0 +1,4 @@
+source;share/pse_aeb/local_setup.bash
+source;share/pse_aeb/local_setup.dsv
+source;share/pse_aeb/local_setup.sh
+source;share/pse_aeb/local_setup.zsh

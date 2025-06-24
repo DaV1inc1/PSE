@@ -1,0 +1,6 @@
+{
+  "package_name": "cmrosutils",
+  "non_idl_tuples": [
+    "/home/ujglv/Dokumente/PSE/Grundstein/carmaker-workspace/ros2_ws/src/cmrosutils:srv/CMRemoteControl.srv"
+  ]
+}

@@ -1,0 +1,6 @@
+msg/Object.idl
+msg/Object.msg
+msg/VehicleInput.idl
+msg/VehicleInput.msg
+msg/VehicleState.idl
+msg/VehicleState.msg

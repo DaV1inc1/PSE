@@ -1,0 +1,8 @@
+{
+  "package_name": "cm_msgs",
+  "non_idl_tuples": [
+    "/home/ujglv/Dokumente/PSE/Grundstein/carmaker-workspace/ros2_ws/src/cm_msgs:msg/Object.msg",
+    "/home/ujglv/Dokumente/PSE/Grundstein/carmaker-workspace/ros2_ws/src/cm_msgs:msg/VehicleState.msg",
+    "/home/ujglv/Dokumente/PSE/Grundstein/carmaker-workspace/ros2_ws/src/cm_msgs:msg/VehicleInput.msg"
+  ]
+}

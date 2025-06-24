@@ -1,0 +1,3 @@
+source;share/cm_ros_if/environment/ament_prefix_path.sh
+source;share/cm_ros_if/environment/library_path.sh
+source;share/cm_ros_if/environment/path.sh
